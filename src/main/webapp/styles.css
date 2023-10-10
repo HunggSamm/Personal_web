@@ -351,7 +351,7 @@ img {
     transition: all 0.5s;
 }
 
-.exercise.layer a:hover {
+.exercise .layer a:hover {
     background: #faca22;
     color: #fff;
     border: 2px solid #fff;
