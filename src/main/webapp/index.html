@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website </title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <section id="header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#"><span>Hung</span>sam.</a>
+            </div>
+            <div class="nav-menu">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#exercise">Exercise</a></li>
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="bottom-left">
+                <h1 class="name">Xuan <span>Hung</span></h1>
+                <h3 class="profession">21110194</h3>
+                <p class="short-desc">
+                    I've only recently learned the web so I'm still a bit inexperienced.
+                </p>
+
+            </div>
+            <div class="bottom-right">
+                <a href="https://www.facebook.com/hunggsaam/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/hunggsamm?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/HunggSamm"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/hunggsamm"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-left">
+            <img src="assets/user.jpg" alt="imguser" />
+        </div>
+        <div class="about-right">
+            <div class="section-title">
+                <h2 class="sub-title">About Me</h2>
+                <h3 class="title">Web Developer</h3>
+            </div>
+            <p class="desc">
+                My name is Hung, student code is 21110194.
+                I am an information technology student at HCMUTE.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                    Skills
+                </p>
+                <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>
+                        <span>UI/UX Design</span><br />Designing Web/App interfaces
+                    </li>
+                    <li><span>Web Development</span><br />Web app development</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>2021 - Current</span><br />Student at HCMUTE.
+                    </li>
+                    <li>
+                        <span>2018 - 2021</span><br />Student at NamDan.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="technology">
+        <div class="section-title">
+            <h2 class="sub-title">My Technology</h2>
+            <h3 class="title">The technologies i use</h3>
+        </div>
+        <div class="technologies">
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+                <p>
+                    Java is a high-level, class-based, object-oriented programming language
+                    that is designed to have as few implementation dependencies as possible.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>
+                    Python is a high-level, general-purpose programming language. Its design
+                    philosophy emphasizes code readability with the use of significant indentation.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Javascript</h2>
+                <p>
+                    JavaScript is a high-level, often just-in-time
+                    compiled language that conforms to the ECMAScript standard.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>
+                    The HyperText Markup Language or HTML is the standard markup
+                    language for documents designed to be displayed in a web browser.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+                    of a document written in a markup language such as HTML or XML.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-docker"></i>
+                <h2>Docker</h2>
+                <p>
+                    Docker is a set of platform as a service (PaaS) products that use OS-level
+                    virtualization to deliver software in packages called containers.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="exercise">
+        <div class="section-title">
+            <h2 class="sub-title">My Exercise</h2>
+            <h3 class="title">Web</h3>
+            <div class="exercise-list">
+                <div class="exercise">
+                    <img src="assets/survey.png" alt="survey" />
+                    <div class="layer">
+                        <h3>Exercise Survey</h3>
+                        <p>
+                            Enter information about first name, last name, email, etc. and return user information.
+                        </p>
+                        <a href="https://survey-ver2.onrender.com/home/" target="_blank"
+                        ><i class="fa fa-external-link" aria-hidden="true"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="exercise">
+                    <img src="assets/email.jpg" alt="exercise" />
+                    <div class="layer">
+                        <h3>Exercise Email</h3>
+                        <p>
+                            It same Exercise Survey. Enter information about first name, last name, email, and return user information.
+                        </p>
+                        <a href="https://email-ver4.onrender.com/home/" target="_blank"
+                        ><i class="fa fa-external-link" aria-hidden="true"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="exercise">
+                    <img src="assets/download.webp" alt="download" />
+                    <div class="layer">
+                        <h3>Exercise Download</h3>
+                        <p>
+                            Create playlists, each with songs. When entering the playlist, you need to log in.
+                            The website will save cookies and have the function to delete cookies
+                        </p>
+                        <a href="https://download-ver3.onrender.com/home/" target="_blank"
+                        ><i class="fa fa-external-link" aria-hidden="true"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="exercise">
+                    <img src="assets/cart.webp" alt="cart" />
+                    <div class="layer">
+                        <h3>Exercise Cart</h3>
+                        <p>
+                            Create a simple store with items. When adding to the cart,
+                            you can edit the quantity or delete the item, and you can return to buy another item.
+                        </p>
+                        <a href="https://cart-ver2.onrender.com/home/" target="_blank"
+                        ><i class="fa fa-external-link" aria-hidden="true"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="learn">
+        <div class="section-title">
+            <h2 class="sub-title">Learn</h2>
+            <h3 class="title">Places I Studied</h3>
+            <div class="source-list">
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="review-text">
+                        This is the YouTube channel
+                        I watch when I start learning a new programming language.
+                    </p>
+                    <div class="review-by">
+                        <div class="img">
+                            <img
+                                    src="assets/telusko.jpg"
+                                    alt="youtuberTelusko"
+                            />
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Telusko</h3>
+                            <h5 class="resignation">youtube.com/@Telusko</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="review-text">
+
+                        After gaining a basic understanding of programming languages,
+                        I took certification exams on famous websites.
+
+                    </p>
+                    <div class="review-by">
+                        <div class="img">
+                            <img
+                                    src="assets/freeCodeCamp.jpg"
+                                    alt="freeCodeCamp"
+                            />
+                        </div>
+                        <div class="info">
+                            <h3 class="name">freeCodeCamp</h3>
+                            <h5 class="resignation" >freecodecamp.org</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="review-text">
+                        This is where I took my certification
+                        exam and also where to learn some more technology.
+                    </p>
+                    <div class="review-by">
+                        <div class="img">
+                            <img
+                                    src="assets/udemy.png"
+                                    alt="Udemy"
+                            />
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Udemy</h3>
+                            <h5 class="resignation">udemy.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">
+            <h2 class="sub-title">Contact</h2>
+            <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+            <div class="contact-left">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input
+                            type="email"
+                            name="Email"
+                            placeholder="Your Email"
+                            required
+                    />
+                    <textarea
+                            name="Message"
+                            rows="6"
+                            placeholder="Your Message"
+                    ></textarea>
+                    <button type="submit">
+                        Send Message <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="vl"></div>
+            <div class="contact-right">
+                <div class="col address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info">
+                        <h2 class="title">Address</h2>
+                        <p>Thu Duc, Ho Chi Minh</p>
+                    </div>
+                </div>
+                <div class="col phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="info">
+                        <h2 class="title">Phone</h2>
+                        <p>+84 666 666 666</p>
+                    </div>
+                </div>
+                <div class="col email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="info">
+                        <h2 class="title">Email</h2>
+                        <p>hunggsamm@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col website">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="info">
+                        <h2 class="title">Website</h2>
+                        <p>www.khongconha.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright ©️ Hunggsamm
+            </p>
+        </div>
+    </section>
+</div>
+
+<script src="animations.js"></script>
+</body>
+</html>
